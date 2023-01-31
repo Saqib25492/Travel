@@ -1,0 +1,17 @@
+{% extends 'master.html' %}
+
+
+{% block title %}
+    My Family Members
+{% endblock title %}
+
+
+{% block content %}
+    <h1> My Family </h1>
+    
+    <h3> Members </h3>
+
+    <p> Check all Family <a href = {% url 'members' %}> Members </a></p>
+{% endblock content %}
+    
+    

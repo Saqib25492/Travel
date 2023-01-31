@@ -1,0 +1,19 @@
+{% extends 'master.html' %}
+
+
+{% block title %}
+    Details about {{member.first_name}} {{member.last_name}}
+{% endblock title %}
+
+
+{% block content %}
+    
+<p> <a href = {% url 'main' %}> Home </a></p>
+<h1>{{ member.first_name }} {{ member.last_name }}</h1>
+  
+<p>Phone: {{ member.phone }}</p>
+<p>Member since: {{ member.joined_date }}</p>
+
+<p>Back to <a href= {% url 'members' %}>Members</a></p>
+
+{% endblock content %}
